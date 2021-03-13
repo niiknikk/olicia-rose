@@ -1196,8 +1196,8 @@ body {
           align-items: center;
   font-family: "Poppins", sans-serif;
   position: relative;
-  height: 16.9rem;
-  width: 40rem;
+  height: 169px
+  width: 42rem;
   max-width: calc(100% - 10px);
 }
 
