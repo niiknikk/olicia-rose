@@ -1,0 +1,58 @@
+.heading-primary{
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    font-family: $ff-poppins;
+    font-weight: 400;
+    color: #111;
+
+    @include respond(phone){
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+.heading-secondary{
+    margin-top: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    font-family: $ff-poppins;
+    font-weight: 400;
+    color: #111;
+    @include respond(phone){
+        letter-spacing: 0.4rem;
+        font-size: 2.6rem;
+    }
+}
+
+.heading-tertiary{
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    font-family: $ff-poppins;
+    font-weight: 400;
+    color: #111;
+}
+
+.text-primary{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    color: #222;
+    margin: 1rem 0;
+}
+
+.text-secondary{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    color: #222;
+}
+
+.text-tertiary{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    color: #222;
+}

@@ -1,0 +1,158 @@
+.fa{
+    font-size: 2rem;
+
+    &-search{
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    &-shopping-basket{
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &-id-card-o{
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &-money{
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &-cart-arrow-down{
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &-star{
+        font-size: 1rem;
+        color: $bg-primary-pink-dark;
+    }
+
+    &-facebook{
+        font-size: 1.6rem;
+        color: #4267B2;
+    }
+
+    &-twitter{
+        font-size: 1.6rem;
+        color:  #00acee;
+    
+    }
+    &-linkedin{
+        font-size: 1.6rem;
+        color: #0e76a8;
+    }
+    
+    &-instagram{
+        font-size: 1.6rem;
+        color: #cd486b;
+    }
+}
+
+
+button{
+    color: #111;
+}
+
+
+
+// margins
+.mb-sm{
+    margin-bottom: 1rem;
+}
+.mb-md{
+    margin-bottom: 2rem;
+}
+.mb-lg{
+    margin-bottom: 1rem;
+}
+.mb-hg{
+    margin-bottom: 1rem;
+}
+// padding
+.pt-sm{
+    padding-top: 1rem;
+}
+.pt-md{
+    padding-top: 2rem;
+}
+.pt-lg{
+    padding-top: 1rem;
+}
+.pt-hg{
+    padding-top: 1rem;
+}
+
+.m-auto{
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+.flex{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(tab-port){
+        // display: block;
+        flex-direction: column;
+    }
+}
+
+.width-60{
+    padding: 2rem 0;
+    width: 70%;
+    @include respond(phone){
+        width: 95%;
+    }
+}
+
+
+// waves
+.wave{
+    position: relative;
+    z-index: -1;
+    margin-top:-6rem;
+    @include respond(tab-port){
+        margin-top: -2rem;
+    }
+}
+.wave-2{
+    position: relative;
+    z-index: -1;
+    margin-top:-8rem;
+    @include respond(tab-port){
+        margin-top: -5rem;
+    }
+}
+.wave-4{
+    @include respond(tab-port){
+        margin-top: -4rem;
+        z-index: -1;
+    }
+    @include respond(phone){
+        margin-top: -3rem;
+        z-index: 0;
+    }
+}
+.wave-5{
+    position: relative;
+    z-index: -1;
+    margin-bottom:-4rem;
+    @include respond(tab-port){
+        margin-bottom: -2rem;
+    }
+}
+.wave-6{
+    position: relative;
+    z-index: -1;
+    margin-top:-10rem;
+    @include respond(tab-port){
+        margin-top: -2rem;
+    }
+}
