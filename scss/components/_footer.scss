@@ -1,87 +1,78 @@
 .footer{
-    background-color: #000;
-    color: #fff;
-    & .o-flex{
-        width: 80%;
+    background-color: #333;
+    font-size: 1.6rem;
+
+    &-logo-box{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &-logo{
+        height: 15rem;
+    }
+
+    &-container{
         display: flex;
-        margin: 0 auto;
-        padding-top: 5rem;
-        padding-bottom: 8rem;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        @include respond(tab-port){
-            flex-wrap: wrap;
-        }
+        padding: 2rem 4rem;
 
-        // border-bottom: 1px solid #fff;
+        @include respond(tab-land){
+            display: block;
+            text-align: center;
+         }
     }
 
-    & .logo img{
-        width: 15rem;
-    }
-    &-items{
-        display: flex;
-        // justify-content: center;
-        // align-items: center;
-        @include respond(tab-port){
-            flex-wrap: wrap;
+    .hr {
+        width: 80%;
+        border-top: 1px solid #eee;
+        border-radius: 5px;
+        
+        @include respond(tab-land){
+            margin: .2rem auto;
+            width: 100%;
         }
     }
+
+    &-nav{
+        flex: 2;
+    }
+
+    &-list{
+        margin-right: 2rem;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
     &-item{
-        margin: 0rem 1.5rem;
+        display: inline-block;
+        margin-right: 1.5rem;
     }
-    & h4{
+
+    &-link{
+        color: #f7f7f7;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: all 0.3s;
+
+        &:hover,
+        &:active{
+            backface-visibility: hidden;
+            color: #0f7268;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+            transform: rotate(5deg) scale(1.03);
+        }
+    }
+
+    &-copyright{
+        flex: 1;
         font-size: 1.6rem;
-        color: rgba(119, 117, 117, 0.788);
-        margin-bottom: 1.5rem;
-    }
-    & h2{
-        color: #fff;
-        font-size: 2rem;
-    }
-    & ul li a {
-        color: #fff;
-        font-size: 1.3rem;
-        margin: 0.7rem 0;
-    }
-
-    &-info{
-        display: flex;
-        flex-direction: column;
-        padding-left: 5rem;
-        & p{
-            color: #999;
-            font-size: 1.4rem;
-        }
-        &-icons{
-            display: flex;
-            // justify-content: center;
-            // align-items: center;
-            & a{
-                height: 4rem;
-                width: 4rem;
-                padding: 1rem;
-                margin: 0rem 1.5rem;
-                margin-right: 1.5rem;
-                border-radius: 50px;
-                border: 1px solid #555;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                &:hover, &:focus, &:active {
-                    -webkit-transform: scale(1.1);
-                    transform: scale(1.1);
-                  }
-            }
-        }
-
-    }
-    & .copyright{
-        border-top: 1px solid #555;
-        padding: 3rem 18rem;
-        @include respond(phone){
-            padding: 3rem 14rem; 
-        }
+        color: #f7f7f7;
+        font-family: 'lato';
+        width: 80%;
+        padding-top: 2rem;
+        display: inline-block;
+        // border-top: 1px solid #eee;
     }
 }

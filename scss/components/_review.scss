@@ -1,0 +1,97 @@
+.review{
+    margin-top: -4rem;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: #222;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.705), rgba(255, 255, 255, 0.493)),url('/img/agency.jpg');
+    
+    &-items{
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &-item{
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.678), rgba(255, 255, 255, 0.562));
+        position: relative;
+        width:60%;
+        padding: 3rem;
+        margin: 1rem;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        transform: skewX(-10deg);
+        transition: all 0.3s;
+        
+    @include respond(tab-land){
+        width: 70%;
+     }
+ 
+     @include respond(tab-port){
+         width: 80%;
+     }
+ 
+     @include respond(phone){
+         width: 95%;
+     }
+        figure{
+            position: relative;
+        }
+        figure img{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            transform: skewX(10deg);
+            transition: all 0.3s;
+
+            @include respond(phone){
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        &-text{
+            transform: skewX(10deg);
+            margin: 0 1rem;
+        }
+ 
+
+    }
+    &-caption{
+        text-transform: uppercase;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        font-size: 1.6rem;
+        background-color: #fafbf9;
+        // color: rgb(255, 255, 255);
+        font-weight: bold;
+        opacity: 0;
+        transition: all 0.3s;
+
+        @include respond(tab-land){
+            transform: translate(-50%, 40%);
+        }
+        @include respond(tab-land){
+            transform: translate(-50%, 70%);
+        }
+
+    }
+    &-item:hover img{
+        filter: blur(3px);
+    }
+    &-item:hover &-caption{
+        opacity: 1;
+        backface-visibility:none ;
+    }
+
+
+}

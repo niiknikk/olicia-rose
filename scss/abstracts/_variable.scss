@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,500&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&family=Cormorant:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;1,500&family=Mulish:ital,wght@0,400;0,500;1,300;1,500&family=Ovo&family=Ubuntu:ital,wght@0,500;1,300;1,400&display=swap');
 
-$ff-lato: 'Lato', sans-serif;
-$ff-poppins: 'Poppins', sans-serif;
-$ff-roboto: 'Roboto', sans-serif;
+ $color-grey-light-1: #f7f7f7;
 
-// bgcolors
-$bg-primary-pink-dark: rgb(255,175,204);
-$bg-primary-pink: rgb(255,200,221);
-$bg-primary-blue: rgb(189,224,254);
-$bg-primary-blue-dark: rgb(162,210,255);
-// $bg-primary-skin:#feebb6;
-$bg-primary-skin: #fcf8e8;
+    $color-primary-blue-op: #4e54c88c;
+    $color-primary-blue-light-op: #8f94fb60;
+    $color-primary-blue: #4e54c8;
+    $color-primary-blue-light: #8f94fb;
 
-$color-secondary: #3b86db;
+    /* ------font family----------- */
+    $ff-bioRhyme: 'BioRhyme';
+    $ff-cormorant: 'Cormorant';
+    $ff-lato: 'Lato';
+    $ff-mulish: 'Mulish';
+    $ff-ubunto: 'Ubuntu';
+    $ff-montserrat: 'Montserrat';

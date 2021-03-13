@@ -1,33 +1,31 @@
 *,
 *::after,
 *::before {
+    box-sizing:inherit;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-    @include respond(tab-land){
-        font-size: 56.5%;
-    }
-    @include respond(phone){ 
-        font-size: 50%;
-    }
-}
-img{
-    font-size: 0;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style-type: none ;
 }
 
 body{
-    width: 100vw;
-    overflow-x: hidden;
-    font-family: $ff-poppins;
-    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+::selection{
+    background-color: $color-primary-blue;
+    color: #fff;
 }
