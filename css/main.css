@@ -1045,10 +1045,7 @@ body {
   grid-column: 2 / span 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-.feature-6 {
+Www-6 {
   background-color: steelblue;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -1196,7 +1193,7 @@ body {
           align-items: center;
   font-family: "Poppins", sans-serif;
   position: relative;
-  height: 169px
+  height: 169px;
   width: 42rem;
   max-width: calc(100% - 10px);
 }
